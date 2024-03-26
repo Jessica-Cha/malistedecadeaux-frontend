@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui" lang="fr">
+
+<f:view>
+    <h:head>
+        <title>Ma liste de cadeaux - Accueil</title>
+    </h:head>
+    <h:body>
+        <h:graphicImage value="/resources/images/logo.png" alt="logoSite"/>
+
+        <p:card style="width: auto; margin-bottom: 2em">
+            <f:facet name="title">
+                Bienvenue,
+            </f:facet>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+                quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
+        </p:card>
+        <h:form>
+            <div class="card">
+                <h5>Connectez-vous</h5>
+                <div class="grid">
+                    <div class="col-5 flex align-items-center justify-content-center">
+                        <div class="ui-fluid">
+                            <div class="field">
+
+                                <p:outputLabel for="login" value="Login"/>
+                                <p:inputText id="login" value="#{compteUtilisateurBean.login}" label="Login"
+                                             placeholder="example@example.fr"
+                                             required="true"
+                                             requiredMessage="La saisie de votre email est obligatoire !"/>
+                                <p:message for="login" display="icon"/>
+                            </div>
+                            <div class="field">
+                                <p:outputLabel for="MDP" value="Mot de Passe"/>
+                                <p:password id="MDP" value="#{compteUtilisateurBean.motDePasse}" toggleMask="true"
+                                            redisplay="true"
+                                            required="true"
+                                            requiredMessage="La saisie de votre mot de passe est obligatoire !"/>
+                                <p:message for="MDP" display="icon"/>
+                            </div>
+
+                            <p:commandButton value="Valider" update="@form"
+                                             action="#{compteUtilisateurBean.returnAction}" icon="pi pi-check"
+                                             iconPos="right" style="width: auto" styleClass="mt-8"/>
+                            <p class="text-center">Première visite ?</p>
+                            <p:link value="Inscrivez-vous">
+                                <f:param name="subscribeLink" value=""/>
+                            </p:link>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </h:form>
+    </h:body>
+</f:view>
+</html>

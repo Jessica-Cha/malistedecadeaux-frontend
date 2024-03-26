@@ -1,0 +1,25 @@
+
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+O
+src/main/webapp/WEB-INF/web.xml,2\e\2e22b6edd746fa3dc40ad7276c87c8d87d72a392
+h
+8src/main/java/fr/jc/malistedecadeaux/dao/BDDConnect.java,7\a\7a6628abda97dd192c278299cf48a462266f62e4
+a
+1src/main/java/fr/jc/malistedecadeaux/dao/DAO.java,6\6\6611a9fadd3fddf994270d9473f178c4732dd879
+r
+Bsrc/main/java/fr/jc/malistedecadeaux/metier/CompteUtilisateur.java,0\3\030d1507f21bcc61e8aa7ca58bb7a726cc7f959a
+\
+,src/main/webapp/faces/templates/layout.xhtml,c\c\ccc563aebd1bc21639e137a671a9e9c40f2e126a
+]
+-src/main/webapp/faces/templates/contenu.xhtml,c\3\c3f8e1132597af1a7d33265a585a0e5d74f4c655
+q
+Asrc/main/java/fr/jc/malistedecadeaux/bean/FacesServletConfig.java,6\9\6905309d352b3314656ef5d5e07ad62a6cf9d5ff
+Q
+!src/main/webapp/WEB-INF/beans.xml,8\3\83008b1a88ba03a2548bb5b9ad0768c6c307d36c
+t
+Dsrc/main/java/fr/jc/malistedecadeaux/bean/CompteUtilisateurBean.java,2\5\25fd64f988c2c3202102fc6ea3c2ae499e807835
+I
+src/main/webapp/index.jsp,8\e\8e6d3b70c9f5b02570779b0441540d45eceb0ded
+Q
+!src/main/webapp/faces/index.xhtml,9\d\9d406a308083c3ecfd41ad80a095df42b2535b1c
