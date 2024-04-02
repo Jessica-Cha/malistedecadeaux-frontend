@@ -1,3 +1,3 @@
 <%
-    response.sendRedirect("faces/index.xhtml");
+    response.sendRedirect("faces/accueil.xhtml");
 %>

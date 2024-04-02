@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui" lang="fr">
+<f:view>
+    <ui:composition template="templates/layout.xhtml"
+                    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                    xmlns:h="http://xmlns.jcp.org/jsf/html">
+        <ui:define name="content">
+            <h:head>
+                <title>Ma liste de cadeaux - Accueil</title>
+            </h:head>
+            <h:body>
+                <p:card style="width: auto; margin-bottom: 2em">
+                    <f:facet name="title">
+                        Bienvenue,
+                    </f:facet>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+                        quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
+                </p:card>
+                <h:form>
+                    <p:card style="width: 300px; margin: 0 auto">
+                        <f:facet name="title">Connectez-vous</f:facet>
+                        <div class="home p-grid">
+                            <div class="col-5 flex align-items-center justify-content-center">
+                                <div class="ui-fluid">
+                                    <div class="field">
+                                        <p:outputLabel for="login" value="Login"/>
+                                        <p:inputText id="login" value="#{compteUtilisateurBean.login}" label="Login"
+                                                     placeholder="example@example.fr"
+                                                     required="true"
+                                                     requiredMessage="La saisie de votre email est obligatoire !"/>
+                                        <p:message for="login" display="icon"/>
+                                    </div>
+                                    <div class="field">
+                                        <p:outputLabel for="MDP" value="Mot de Passe"/>
+                                        <p:password id="MDP" value="#{compteUtilisateurBean.motDePasse}"
+                                                    toggleMask="true"
+                                                    redisplay="true"
+                                                    required="true"
+                                                    requiredMessage="La saisie de votre mot de passe est obligatoire !"/>
+                                        <p:message for="MDP" display="icon"/>
+                                    </div>
+                                    <div style="text-align: center">
+                                        <p:commandButton value="Valider" update="@form"
+                                                         action="#{compteUtilisateurBean.returnAction}"
+                                                         icon="pi pi-check"
+                                                         iconPos="right" style="width: auto" styleClass="mt-8"/>
+                                    </div>
+                                    <div style="text-align: center; margin-top: 8px">
+                                        <small class="text-center">Première visite ?</small>
+                                    </div>
+                                    <div style="text-align: center">
+                                        <p:link outcome="inscription.xhtml" action="#{inscriptionBean.setInscriptionActive(true)}">
+                                            Inscrivez-vous
+                                        </p:link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </p:card>
+                </h:form>
+            </h:body>
+        </ui:define>
+    </ui:composition>
+</f:view>
+</html>
